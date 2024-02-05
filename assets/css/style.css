@@ -38,7 +38,19 @@
 }
 
 .debug #my-user{
+    height: calc((100%/8));
+}
 
+.debug #my-not{
+    height: calc((100%/8));
+}
+
+.debug #search-bar{
+    height: calc((100%/16));
+}
+
+.debug .card-user{
+    height: calc((100%/8));
 }
 
 /*Utilities*/
@@ -73,10 +85,21 @@
     background-color: brown;
     height: 96vh;
     margin:auto;
-
 }
 
+.col-left{
+    max-height: 100%;
+    overflow-y: scroll;
+}
 
+#my-user{
+    justify-content: space-between;
+    align-items: center;
+}
+
+#my-not{
+    align-items: center;
+}
 
 
 
@@ -101,6 +124,9 @@
     }
     .col-md-11{
         width: calc((100%/12)*11);
+    }
+    .card-bye{
+        display: none;
     }
 }
 
