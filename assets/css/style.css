@@ -1,11 +1,10 @@
 /*Colours*/
 :root {
     --bool-bg-dark: #009688;
-    --bool-bg-light: #DADBD4;
-    --bool-lightup: #EAEAEA;
+    --bool-bg-light: #EAEAEA;
+    --bool-lightup:  #8b8d83 ;
     --bool-bg-windowup: #8EDAFC;
-    --bool-bg-light: #FFFFFF;
-    --bool-bg-light: #D5F9BA;
+    --bool-bg-text: #D5F9BA;
 }
 
 
@@ -32,22 +31,24 @@
 
 .debug .col-4 {
     background-color: aqua;
+    border: 1px solid black;
 }
 
 .debug .col-8 {
     background-color: greenyellow;
 }
 
-.debug #my-user {
+/*.debug #my-user {
     height: calc((100%/8));
 }
 
-.debug #my-not {
+*/.debug #my-not {
     height: calc((100%/8));
 }
 
 .debug #search-bar {
     height: calc((100%/16));
+    background-color: white;
 }
 
 .debug .card-user {
@@ -68,6 +69,9 @@
     background-color: darkorchid;
 }
 
+
+
+
 /*Utilities*/
 .d-flex {
     display: flex;
@@ -75,6 +79,7 @@
 
 .col-3 {
     width: calc((100%/12)*3);
+    height: 100%;
 }
 
 .col-4 {
@@ -96,19 +101,28 @@
 .img-100{
     width: 100%;
     border-radius: 50%;
-}
-
-.img-left{
+    aspect-ratio: 1/1;
+    max-height: 100%;
     padding:10%;
+    object-fit:contain;
+}
+
+.icon{
+    max-width: 90%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    max-height: 90%;
+    margin-left: 10%;
+    object-fit:contain;
+}
+
+.text-center{
+    text-align: center;
 }
 
 
 
-
-
-
-
-
+/*Big things*/
 
 
 #site-main {
@@ -117,41 +131,83 @@
 
 .chat-container {
     width: 80%;
-    background-color: brown;
     height: 96vh;
     margin: auto;
 }
 
-.my-menu{
-    list-style: none;
-    flex-direction: row-reverse;
-    gap:10%
-}
+
+/*LEFT COLUMN*/
 
 .col-left {
     max-height: 100%;
     overflow-y: scroll;
 }
 
+/*My user*/
 #my-user {
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--bool-lightup);
+    background-color: var(--bool-bg-light);
 }
 
+.my-menu{
+    list-style: none;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap:10%;
+    padding-right: 10%;
+    color: var(--bool-lightup);
+}
+
+
+/*My not*/
 #my-not {
+    background-color: #8EDAFC;
     align-items: center;
 }
 
-.card-user
+#my-not .col-3{
+    align-items: center;
+    justify-content: center;
+}
+
+#my-not .icon{
+    text-align: center;
+    background-color: white;
+    color: #8EDAFC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Search bar*/
+#search-bar{
+    padding: 5%;
+}
+
+
+/*card-users-container*/
+.card-user{
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid grey;
+}
+
+.name-hour{
+    justify-content: space-between;
+}
+
+
+
+
+/*RIGHT COLUMN*/
+
+.col-right {
+    flex-direction: column;
+}
 
 #up-right {
     width: 100%;
     justify-content: space-between;
-}
-
-.col-right {
-    flex-direction: column;
 }
 
 #middle-right {
@@ -170,6 +226,7 @@
 #r-square {
     align-self: flex-end;
 }
+
 
 
 
@@ -197,6 +254,10 @@
 
     .col-md-11 {
         width: calc((100%/12)*11);
+    }
+
+    .col-md-12{
+        width: 100%;
     }
 
     .card-bye {
