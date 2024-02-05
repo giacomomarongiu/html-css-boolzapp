@@ -19,13 +19,6 @@
 }
 
 
-/*Utilities*/
-.container-80{
-    width: 80%;
-    margin: auto;
-}
-
-
 
 
 /*Debug*/
@@ -33,16 +26,80 @@
 .debug main{
     background-color: blueviolet;
     height: 100vh;
+    width: 100vw;
 }
 
-.debug .container-80{
+.debug .col-4{
+    background-color: aqua;
+}
+
+.debug .col-8{
+    background-color: greenyellow;
+}
+
+.debug #my-user{
+
+}
+
+/*Utilities*/
+.d-flex{
+    display: flex;
+}
+
+.col-4{
+    width: calc((100%/12)*4);
+}
+
+.col-8{
+    width: calc((100%/12)*8);
+}
+
+
+
+
+
+
+
+
+
+
+
+#site-main{
+    padding-top: 2vh;
+}
+
+.chat-container{
+    width: 80%;
     background-color: brown;
-    height: 100vh;
-}
-
-
-body{
+    height: 96vh;
+    margin:auto;
 
 }
 
 
+
+
+
+
+
+
+
+
+
+/*Media Query*/    
+@media screen and (max-width:991px) {
+    .chat-container {
+        width: 100%;
+        height: 100vh;
+        margin:auto;
+    }
+    #site-main{
+        padding: 0;
+    }
+    .col-md-1{
+        width: calc((100%/12)*1);
+    }
+    .col-md-11{
+        width: calc((100%/12)*11);
+    }
+}
