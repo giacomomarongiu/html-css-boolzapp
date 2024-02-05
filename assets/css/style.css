@@ -1,0 +1,48 @@
+/*Colours*/
+:root{
+    --bool-bg-dark:#009688;
+    --bool-bg-light:#DADBD4;
+    --bool-lightup:#EAEAEA;
+    --bool-bg-windowup:#8EDAFC    ;
+    --bool-bg-light:#FFFFFF;
+    --bool-bg-light:#D5F9BA;
+}
+
+
+
+
+/*Reset CSS*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+/*Utilities*/
+.container-80{
+    width: 80%;
+    margin: auto;
+}
+
+
+
+
+/*Debug*/
+
+.debug main{
+    background-color: blueviolet;
+    height: 100vh;
+}
+
+.debug .container-80{
+    background-color: brown;
+    height: 100vh;
+}
+
+
+body{
+
+}
+
+
