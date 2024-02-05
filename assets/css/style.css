@@ -53,6 +53,11 @@
     height: calc((100%/8));
 }
 
+.debug #up-right{
+    height: calc((100%/8));
+    background-color: chocolate;
+}
+
 /*Utilities*/
 .d-flex{
     display: flex;
@@ -101,7 +106,10 @@
     align-items: center;
 }
 
-
+#up-right{
+    width: 100%;
+    justify-content: space-between;
+}
 
 
 
@@ -136,5 +144,8 @@
     }
     .col-12-sm{
         width: 100%;
+    }
+    .card-bye-sm{
+        display: none;
     }
     }
