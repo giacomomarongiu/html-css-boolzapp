@@ -166,6 +166,7 @@ main {
 .col-left {
     max-height: 100%;
     overflow-y: scroll;
+    border-left: 2px solid --bool-bg-light;
 }
 
 
@@ -281,7 +282,6 @@ main {
     align-items: center;
     height: 85px;
     background-color: #EAEAEA;
-    border-right: 1px solid --bool-bg-light;
 }
 
 #up-right .img-100 {
@@ -290,17 +290,8 @@ main {
     padding: 0;
 }
 
-#up-right .col-2 {
-    justify-content: center;
-    align-items: center;
-}
-
-
-#up-right ul {
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-
+#up-right ul li{
+    padding-right: 5px;
 }
 
 
@@ -325,7 +316,7 @@ main {
 .square {
     display: flex;
     padding: 20px;
-    border-radius: 5%;
+    border-radius: 5px 5px 5px 5px;
     gap: 5px
 }
 
@@ -348,17 +339,18 @@ main {
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 1% 2%;
     gap: 20px;
 }
 
 
 #bottom-right input {
     width: 100%;
-    height: 80%;
+    height: 95%;
     border: none;
+    border-radius: 5px 5px 5px 5px;
 }
+
 
 .emoji {
     color: #8b8d83;
@@ -372,8 +364,13 @@ main {
 
 /*Media Query*/
 @media screen and (max-width:991px) {
+
+    #site-main{
+        padding: 0;
+    }
+
     .chat-container {
-        width: 100%;
+        width:100%;
         height: 100vh;
         margin: auto;
     }
@@ -382,6 +379,10 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .img-100{
+        padding: 15%;
     }
 
     .col-left .col-3 {
@@ -407,12 +408,18 @@ main {
         flex-direction: column;
     }
 
+    .col-md-2{
+        min-width: 120px;
+    }
+
     .col-md-1 {
-        width: 65px;
+        max-width: calc((100%/12)*1) ;
+        min-width: 65px;
     }
 
     .col-md-11 {
         width: calc((100%/12)*11);
+
     }
 
     .col-md-12 {
