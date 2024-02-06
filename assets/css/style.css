@@ -378,13 +378,13 @@ main {
         margin: auto;
     }
 
-    #card-users-container{
+    #card-users-container {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .col-left .col-3{
+    .col-left .col-3 {
         height: auto;
     }
 
@@ -408,7 +408,7 @@ main {
     }
 
     .col-md-1 {
-        width: calc((100%/12)*1);
+        width: 65px;
     }
 
     .col-md-11 {
