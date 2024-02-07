@@ -167,7 +167,6 @@ main {
 .col-left {
     max-height: 100%;
     overflow-y: scroll;
-    border-left: 2px solid --bool-bg-light;
 }
 
 
@@ -290,7 +289,6 @@ main {
 
 
 
-
 /*middle-right*/
 
 #middle-right {
@@ -351,6 +349,41 @@ main {
     font-size: larger;
 }
 
+/*BONUS*/
+
+
+/* SHOW BIG 
+When your are in :hover on the user profile-pic you can see the img big*/
+.col-right {
+    position: relative;
+}
+
+.show-big {
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #00968777;
+    transition-delay: 3s;
+    display: none ;
+
+    & .big-profile {
+        max-width: 60%;
+        padding-top: 30px;
+    }
+}
+
+.lets-show:hover {
+
+    & .show-big {
+        display: block;
+    }
+}
+
+
+
 
 /*Hidden Menu - ChevronDown*/
 #middle-right i {
@@ -367,7 +400,7 @@ main {
     top: 12px;
     left: -70px;
     border-radius: 5px;
-    display: none ;
+    display: none;
 
 }
 
@@ -493,4 +526,5 @@ main {
     .card-bye-sm {
         display: none;
     }
+
 }
