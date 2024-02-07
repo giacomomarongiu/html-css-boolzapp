@@ -354,6 +354,7 @@ main {
 
 /* SHOW BIG 
 When your are in :hover on the user profile-pic you can see the img big*/
+
 .col-right {
     position: relative;
 }
@@ -374,6 +375,17 @@ When your are in :hover on the user profile-pic you can see the img big*/
         padding-top: 30px;
     }
 }
+
+.chat-container{
+    position: relative;
+}
+
+.col-left .big-profile{
+    position: absolute;
+    left:33%;
+}
+
+
 
 .lets-show:hover {
 
